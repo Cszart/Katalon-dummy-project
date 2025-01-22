@@ -5,7 +5,7 @@ pool:
   vmImage: windows-latest
   name: Default
   demands:
-   - agent.name -equals localAgents
+   - agent.name -equals katalon_local
 
 steps:
 - script: katalonc -noSplash -runMode=console -projectPath="C:\Users\Cesar\OneDrive\Documents\Projects\dummy testing\dummy testing.prj" -retry=2 -retryStrategy=immediately -testSuitePath="Test Suites/TS-001 Auth" -browserType="Chrome" -executionProfile="default" -apiKey="8319664e-a7dd-449f-9fc0-555af4cdc02f" --config -webui.autoUpdateDrivers=true
