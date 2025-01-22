@@ -3,7 +3,7 @@ trigger:
 
 pool:
   vmImage: windows-latest
-  name: Default
+  name: localAgents
   demands:
    - agent.name -equals katalon_local
 
